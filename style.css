@@ -1,0 +1,131 @@
+body {
+    min-width: 350px;
+    min-height: 200px;
+    overflow-x: hidden;
+    font: 11px sans-serif;
+}
+.container {
+    height: 400px;
+    overflow-x: hidden;
+}
+ul {
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+li {
+    list-style: none;
+    /*margin-top: 5px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+    padding: 0 0 3px 0;
+    border-bottom: 1px solid #DDD;
+}
+li:hover {
+    background:#C5EAF8;
+    outline:#A8DFF4 solid thin;
+}
+li span{
+    cursor: pointer;
+    margin-right: 5px;
+}
+img {
+    margin-top: 5px;
+    margin-bottom: -3px;
+}
+.disableAll {
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.spanForEnableDisableExtn {
+    float: right;
+    vertical-align:middle;
+}
+input.enableDisableExtn {
+    vertical-align:middle;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d00;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box ;
+    width: 16px;
+    height: 16px;
+    border-width: 0;
+    transition: all .3s linear;
+}
+input[type="checkbox"]:checked{
+  background-color: #2ECC71;
+}
+#searchExtn {
+    padding: 5px;
+    width: 94%;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+@keyframes yellowfade {
+    from {
+        background: yellow;
+    }
+    to {
+        background: transparent;
+    }
+}
+
+p.item-highlight {
+  animation: yellowfade 1s;
+}
+#storeCont {
+    height: 21px;
+    background: #efefef;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #dfdfdf;
+}
+.container {
+    position: relative;
+}
+#storeContInner {
+    text-align: center;
+    margin: 2px 4px 0;
+    padding: 0px 26px;
+    background: no-repeat left center;
+}
+#storeLnk {
+    color: grey;
+    text-decoration: none;
+}
+#storeContInner {
+    text-align: center;
+}
+.headerContainer {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+}
+.headerContainer h1 {
+    padding: 0;
+    margin: 5px;
+}
+.headerContainer span.sideTxt {
+    font-size: 14px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    float: right;
+    cursor: default;
+}
+.totalExtensions {
+    font-size: 14px;
+    margin-top: 6px;
+    position: absolute;
+    margin-left: 4px;
+    font-weight: normal;
+}
